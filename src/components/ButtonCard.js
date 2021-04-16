@@ -5,7 +5,7 @@ class ButtonCard extends Component {
   render() {
     return (
       <div className="button-card">
-        <ButtonFrame handleClick={this.props.handleClick} />
+        <ButtonFrame />
       </div>
     );
   }

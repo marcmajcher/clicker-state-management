@@ -3,6 +3,6 @@ import CounterCard from './CounterCard';
 
 export default class CounterFrame extends Component {
   render() {
-    return <CounterCard count={this.props.count} />;
+    return <CounterCard />;
   }
 }
