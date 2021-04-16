@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  font-size: 2em;
+  margin: 1em;
+}
+
+.button-container {
+  width: 500px;
+  height: 200px;
+}
+
+.button-card {
+  background-color: grey;
+}
+
+.button-frame {
+  border: 1px solid pink;
+}
+
+.counter-container {
+  width: 70%;
+  text-align: center;
+}
+
+.counter-card {
+  color: darkblue;
+}
+
+.counter-frame {
+  border: 2px solid blue;
+  padding: 2em;
+  margin: 2em;
+}
+
+.count {
+  font-weight: 800;
+}
