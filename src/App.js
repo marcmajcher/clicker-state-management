@@ -1,14 +1,23 @@
+import { Component } from 'react';
 import './App.css';
 import ButtonContainer from './components/ButtonContainer';
 import CounterContainer from './components/CounterContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <ButtonContainer></ButtonContainer>
-      <CounterContainer></CounterContainer>
-    </div>
-  );
-}
+export default class App extends Component {
+  state = {
+    count: 0,
+  };
 
-export default App;
+  upCount = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <ButtonContainer handleClick={this.upCount}></ButtonContainer>
+        <CounterContainer count={this.state.count}></CounterContainer>
+      </div>
+    );
+  }
+}

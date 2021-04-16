@@ -5,7 +5,7 @@ class ButtonContainer extends Component {
   render() {
     return (
       <div className="button-container">
-        <ButtonCard />
+        <ButtonCard handleClick={this.props.handleClick} />
       </div>
     );
   }
